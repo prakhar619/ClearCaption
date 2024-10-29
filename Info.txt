@@ -1,0 +1,56 @@
+Image Captioning System
+    Encoder - Decoder Architecture
+    One-To-Many Network
+    
+
+Encoder -> Context -> Decoder
+ANN weights (4096) -> Input to LSTM based Decoder / Initial Hidden state of RNN 
+
+Decoder uses Attention along LSTM
+
+Encoder 
+    VGG19 Architecture 
+    removed fully connected layer 
+
+
+
+Dataset
+    "images": [
+        {
+            "license": 5,
+            "file_name": "COCO_train2014_000000057870.jpg",
+            "coco_url": "http://images.cocodataset.org/train2014/COCO_train2014_000000057870.jpg",
+            "height": 480,
+            "width": 640,
+            "date_captured": "2013-11-14 16:28:13",
+            "flickr_url": "http://farm4.staticflickr.com/3153/2970773875_164f0c0b83_z.jpg",
+            "id": 57870
+        },
+        {
+            "license": 5,
+            "file_name": "COCO_train2014_000000384029.jpg",
+            "coco_url": "http://images.cocodataset.org/train2014/COCO_train2014_000000384029.jpg",
+            "height": 429,
+            "width": 640,
+            "date_captured": "2013-11-14 16:29:45",
+            "flickr_url": "http://farm3.staticflickr.com/2422/3577229611_3a3235458a_z.jpg",
+            "id": 384029
+        },
+
+    "annotations": [
+        {
+            "image_id": 318556,
+            "id": 48,
+            "caption": "A very clean and well decorated empty bathroom"
+        },
+        {
+            "image_id": 116100,
+            "id": 67,
+            "caption": "A panoramic view of a kitchen and all of its appliances."
+        },
+        {
+            "image_id": 318556,
+            "id": 126,
+            "caption": "A blue and white bathroom with butterfly themed wall tiles."
+        },
+
